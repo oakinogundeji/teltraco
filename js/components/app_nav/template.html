@@ -1,3 +1,30 @@
-<section>
-  <h3>App Nav</h3>
-</section>
+<!--from /components/app_nav/template.html -->
+<nav class="navbar">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+      <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <router-link :to="{name: 'home'}" class="navbar-brand" id="app-label">Telios</router-link>
+  </div>
+  <!-- Collection of nav links and other content for toggling -->
+  <div id="navbarCollapse" class="collapse navbar-collapse pull-right">
+    <ul class="nav navbar-nav">
+        <li>
+            <router-link :to="{name: 'home'}"><i class="fa fa-home"></i> Home</router-link>
+        </li>
+        <li>
+            <router-link :to="{name: 'commodities'}"><i class="fa fa-briefcase"></i> Commodities</router-link>
+        </li>
+        <li>
+            <router-link :to="{name: 'about_us'}"><i class="fa fa-user"></i> About Us</router-link>
+        </li>
+        <li>
+            <router-link :to="{name: 'contact_us'}"><i class="fa fa-user"></i> Contact Us</router-link>
+        </li>
+    </ul>
+  </div>
+</nav>
